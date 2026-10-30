@@ -1,0 +1,519 @@
+.app-layout {
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 252px;
+  background: #ffffff;
+  border-right: 1px solid #e9edf4;
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 8px;
+  margin-bottom: 48px;
+}
+
+.brand-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  background: #e9efff;
+  color: #4263eb;
+  border-radius: 14px;
+}
+
+.brand h2 {
+  font: 800 24px "Manrope", sans-serif;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.brand span {
+  font-size: 11px;
+  color: #818a9d;
+}
+
+.nav-heading {
+  padding-left: 12px;
+  color: #929aab;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.navigation {
+  display: grid;
+  gap: 8px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 12px;
+  color: #70798b;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+  background: #f2f5ff;
+  color: #4263eb;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  border-top: 1px solid #edf0f5;
+  padding: 22px 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.avatar {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e9efff;
+  color: #4263eb;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.sidebar-footer strong,
+.sidebar-footer span {
+  display: block;
+}
+
+.sidebar-footer strong {
+  font-size: 12px;
+}
+
+.sidebar-footer span {
+  color: #929aab;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.main-content {
+  margin-left: 252px;
+  min-height: 100vh;
+}
+
+.header {
+  min-height: 112px;
+  background: #ffffff;
+  border-bottom: 1px solid #e9edf4;
+  padding: 25px 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header h1 {
+  font: 700 23px "Manrope", sans-serif;
+  margin: 0;
+  letter-spacing: -0.7px;
+}
+
+.header p {
+  color: #929aab;
+  font-size: 12px;
+  margin: 7px 0 0;
+}
+
+.header-badge {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 13px;
+  background: #ffffff;
+  border: 1px solid #e9edf4;
+  border-radius: 9px;
+  color: #596275;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #24b47e;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.page-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 34px 38px;
+}
+
+.welcome-card {
+  background: linear-gradient(120deg, #263d91, #526fe4);
+  border-radius: 17px;
+  padding: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.eyebrow {
+  color: #d5deff;
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+}
+
+.welcome-card h2 {
+  font: 700 25px "Manrope", sans-serif;
+  letter-spacing: -0.8px;
+  max-width: 440px;
+  margin: 14px 0 10px;
+}
+
+.welcome-card p {
+  max-width: 460px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #e1e7ff;
+  margin: 0;
+}
+
+.welcome-icon {
+  min-width: 110px;
+  width: 110px;
+  height: 110px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #8799ed;
+  background: #ffffff12;
+  border-radius: 26px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 35px 0 19px;
+}
+
+.section-heading h2 {
+  font: 700 17px "Manrope", sans-serif;
+  margin: 0;
+}
+
+.section-heading p {
+  font-size: 12px;
+  color: #929aab;
+  margin: 6px 0 0;
+}
+
+.management-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.management-card {
+  background: #ffffff;
+  border: 1px solid #e9edf4;
+  border-radius: 14px;
+  padding: 23px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.management-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px #233b7510;
+}
+
+.card-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  background: #edf1ff;
+  color: #4263eb;
+  border-radius: 12px;
+  margin-bottom: 19px;
+}
+
+.management-card h3 {
+  font: 700 15px "Manrope", sans-serif;
+  margin: 0 0 8px;
+}
+
+.management-card p {
+  color: #929aab;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+.card-action {
+  color: #4263eb;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-action span {
+  margin-left: 5px;
+}
+
+.api-notice {
+  margin-top: 25px;
+  padding: 17px 19px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid #e9edf4;
+  border-radius: 12px;
+}
+
+.api-notice .status-dot {
+  margin-top: 4px;
+}
+
+.api-notice strong {
+  font-size: 12px;
+}
+
+.api-notice p {
+  font-size: 11px;
+  color: #929aab;
+  margin: 5px 0 0;
+}
+
+.placeholder-card {
+  background: #ffffff;
+  border: 1px solid #e9edf4;
+  border-radius: 14px;
+  padding: 45px 25px;
+  text-align: center;
+  color: #4263eb;
+}
+
+.placeholder-card h3 {
+  color: #1c2434;
+  font: 700 17px "Manrope", sans-serif;
+  margin-top: 18px;
+}
+
+.placeholder-card p {
+  color: #929aab;
+  font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+  .management-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 16px;
+    border-right: 0;
+    border-bottom: 1px solid #e9edf4;
+  }
+
+  .brand {
+    margin-bottom: 18px;
+  }
+
+  .nav-heading,
+  .sidebar-footer {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .nav-link {
+    flex-shrink: 0;
+    padding: 11px;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .header {
+    padding: 22px 18px;
+    min-height: 95px;
+  }
+
+  .header h1 {
+    font-size: 19px;
+  }
+
+  .header-badge {
+    display: none;
+  }
+
+  .page-content {
+    padding: 22px 16px;
+  }
+
+  .welcome-card {
+    padding: 25px 22px;
+  }
+
+  .welcome-card h2 {
+    font-size: 21px;
+  }
+
+  .welcome-icon {
+    display: none;
+  }
+
+  .management-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.page-content {
+  padding: 24px;
+}
+
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.page-heading h1 {
+  margin-bottom: 6px;
+}
+
+.page-heading p {
+  color: #6b7280;
+}
+
+.primary-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card,
+.content-card {
+  padding: 20px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.stat-card span,
+small {
+  color: #6b7280;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th,
+td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+th {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.form-card {
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.form-card input {
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-card input:focus {
+  outline: 2px solid #a5b4fc;
+  border-color: #6366f1;
+}
+
+.form-card button {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.status-available,
+.status-borrowed {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-available {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-borrowed {
+  background: #fee2e2;
+  color: #991b1b;
+}
